@@ -11,5 +11,10 @@ coverage
 # Benchmarking
 benchmarks/graphs
 
+# Ignore compiled files
+dist/
+*.js
+!_*.js
+
 # ignore additional files using core.excludesFile
 # https://git-scm.com/docs/gitignore
