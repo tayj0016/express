@@ -63,7 +63,7 @@ userRoute.post('', async (req, res, next) => {
         userId = lastElement.userId + 1;
     }
     // console.log(obj);
-    let newUser = new User(userId, obj.firstName, obj.lastName, obj.email, hashedPassword);
+    let newUser = new User(userId, obj.firstName, obj.lastName, obj.email, hashedPassword, obj.isAdmin);
 
     if (newUser.CompleteUser()) {
         userArray.push(newUser);
